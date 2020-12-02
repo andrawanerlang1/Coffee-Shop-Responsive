@@ -495,13 +495,19 @@ main {
   /* ======================================== for phone media ============================================== */
   @media (max-width: 420px) {
     .line1 {
-      text-align: left;
-      margin-left: 20px;
+      text-align: center;
+      margin-left: 0px;
       font-size: 15px;
+      background-color: lightyellow;
+      border-radius: 17px;
     }
     .line2 {
-      text-align: left;
+      text-align: center;
       font-size: 5px;
+      margin-left: -15px;
+      width: 120px;
+    }
+    .line2 li {
       margin: 0 0 0 0;
     }
     .line3 .flex-container {
@@ -545,6 +551,7 @@ main {
     .rec3 {
       height: 0px;
     }
+
     .line4 {
       width: 50px;
       height: 34px;
@@ -589,6 +596,9 @@ main {
       font-size: 7px;
       line-height: 30px;
     }
+    .footer-profile {
+      margin-left: -30px;
+    }
     .footer-profile .profile-logo {
       font-size: 10px;
     }
@@ -601,12 +611,16 @@ main {
       font-size: 20px;
       height: auto;
       margin-left: 3px;
+      padding: 0px;
     }
     .footer-product div a:link {
       font-size: 20px;
     }
     .footer-profile .profile-social img {
       width: 20px;
+    }
+    .profile-copy {
+      font-size: 10px;
     }
   }
   /* ======================================== MEDIA UNTUK FOOTER ====================================== */
