@@ -4,7 +4,6 @@ header a:visited {
   text-decoration: none;
 }
 .flex-container {
-  border: 5px solid black;
   box-sizing: border-box;
 }
 .flex-container header {
@@ -13,7 +12,6 @@ header a:visited {
   padding: 30px;
   display: flex;
   justify-content: space-between;
-  border: 5px solid blue;
 }
 header .header-logo {
   font-weight: bold;
@@ -28,6 +26,9 @@ header .header-menu {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.header-menu div {
+  margin-left: 5px;
+}
 .home:hover,
 .product:hover,
 .cart:hover,
@@ -41,16 +42,12 @@ header .header-account {
   flex-direction: row;
   justify-content: space-evenly;
 }
-main {
-  height: 700px;
-  background-color: lightblue;
-  border: 5px solid red;
-}
 .flex-container footer {
   display: flex;
   align-items: flex-start;
   padding: 60px;
   font-family: "Rubik", sans-serif;
+  background-color: #f8f8f8;
 }
 footer .footer-profile {
   font-family: "Rubik", sans-serif;
@@ -86,7 +83,6 @@ footer .footer-profile {
 footer .footer-product {
   flex: 1;
   width: 20%;
-  background-color: cadetblue;
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -94,17 +90,389 @@ footer .footer-product {
   line-height: 30px;
   color: #0b132a;
   height: 300px;
+  margin-right: 10px;
 }
 .footer-product div a:link {
   color: #4f5665;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   text-decoration: none;
 }
-footer .footer-engage {
-  flex: 1;
-  height: 70px;
-  background-color: mediumaquamarine;
+/* =========================batas style header dan footer================================================== */
+main {
+  border-top: #f8f8f8 solid 5px;
+  height: 1000px;
+}
+/* =============================== main promo ============================================================ */
+.main-promo {
+  border-right: #f8f8f8 solid 5px;
+  height: 1005px;
+  background-color: white;
+}
+.line1 {
+  text-align: center;
+  color: #6a4029;
+  margin-top: 30px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+.line2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 20px;
+}
+.line2 li {
+  list-style-type: none;
+}
+.line3 .flex-container {
+  background-color: white;
+  height: 500px;
+  display: flex;
+}
+.rec1 {
+  position: absolute;
+  height: 472px;
+  width: 284px;
+  left: 100px;
+  background-color: #ffcb65;
+  border-radius: 15px;
+}
+.rec1 .top {
+  height: 320px;
+  border-bottom: black dashed 2px;
+}
+.top .one {
+  margin-top: 50px;
+  margin-left: 75px;
+}
+.top .two {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 20px;
+}
+.top .three {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+.rec1 .bottom {
+  height: 150px;
+}
+.bottom .one {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+}
+.bottom .two {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  text-align: center;
+}
+.bottom .three {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 101.34%;
+  text-align: center;
+}
+.rec2 {
+  position: absolute;
+  width: 284px;
+  height: 400px;
+  background-color: black;
+  margin-top: 40px;
+  left: 130px;
+  border-radius: 15px;
+}
+.rec3 {
+  position: absolute;
+  background-color: #895537;
+  width: 284px;
+  height: 338px;
+  margin-top: 70px;
+  left: 160px;
+  border-radius: 15px;
+}
+.line4 {
+  width: 284px;
+  height: 64px;
+  margin-left: 87px;
+  top: 840px;
+  background: #6a4029;
+  border-radius: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+  color: white;
+}
+.line5 {
+  margin-top: 120px;
+  margin-left: 20px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+.line5 li {
+  list-style-type: none;
+  font-weight: normal;
+  margin-top: 10px;
+}
+/* =============================== main product =============================== */
+.main-product {
+  background-color: white;
+}
+.main-product .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.main-product .top div {
+  margin-left: 5px;
+}
+.main-product .top a:link,
+.main-product .top a:visited {
+  color: #9f9f9f;
+  text-decoration: none;
+}
+.main-product .top a:hover {
+  color: black;
+}
+.fav:hover,
+.cof:hover,
+.noncof:hover,
+.fav:hover,
+.food:hover,
+.addon:hover {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+.mid .flex-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+.mid div div {
+  width: 156px;
+  height: 212.41px;
+  margin-left: 50px;
+  margin-top: 60px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mid div div img {
+  position: relative;
+  left: 0;
+  top: -50px;
+}
+.mid div div .name {
+  position: relative;
+  top: -50px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+}
+.mid div div .price {
+  position: relative;
+  top: -50px;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 17px;
+}
+.flex-container .discount {
+  position: relative;
+  bottom: 260px;
+  left: 120px;
+  width: 60px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 37px;
+  border-radius: 17px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bot {
+  margin-top: 20px;
+}
+/*================================== media query ============================================================*/
+
+@media (max-width: 1300px) {
+  .line1 {
+    text-align: left;
+    margin-left: 20px;
+  }
+  .line2 {
+    text-align: left;
+  }
+  .line3 .flex-container {
+    height: 500px;
+  }
+  .rec1 {
+    height: 472px;
+    width: 150px;
+    left: 50px;
+  }
+  .top .one {
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  .top .two {
+    font-size: 17px;
+  }
+  .top .three {
+    font-size: 10px;
+  }
+  .rec1 .bottom {
+    height: 150px;
+  }
+  .bottom .one {
+    font-size: 10px;
+  }
+  .bottom .two {
+    font-size: 20px;
+  }
+  .bottom .three {
+    font-size: 9px;
+  }
+  .rec2 {
+    height: 0px;
+  }
+  .rec3 {
+    height: 0px;
+  }
+  .line4 {
+    width: 100px;
+    height: 64px;
+    margin-left: 50px;
+    font-size: 10;
+    line-height: 20px;
+  }
+  .line5 {
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .mid .flex-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mid div div {
+    width: 105px;
+    height: 150.41px;
+  }
+  .mid div div img {
+    width: 70px;
+    top: -30px;
+  }
+  .mid div div .name {
+    font-size: 17px;
+    top: -20px;
+  }
+  .mid div div .price {
+    font-size: 12px;
+    top: -30px;
+  }
+  .flex-container .discount {
+    bottom: 175px;
+    left: 65px;
+    width: 50px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 780px) {
+  .mid .flex-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mid div div {
+    width: 70px;
+    height: 80.41px;
+  }
+  .mid div div img {
+    width: 50px;
+    top: -30px;
+  }
+  .mid div div .name {
+    font-size: 12px;
+    top: -30px;
+  }
+  .mid div div .price {
+    font-size: 9px;
+    top: -40px;
+  }
+  .bot {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .flex-container .discount {
+    bottom: 145px;
+    left: 45px;
+    width: 30px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .rec1 {
+    width: 130px;
+    left: 18px;
+  }
+  .one img {
+    width: 90px;
+    margin-left: 10px;
+  }
+  .line4 {
+    margin-left: 0px;
+  }
+  /* ======================================== MEDIA UNTUK FOOTER ====================================== */
+  .footer-profile .profile-desc {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  footer .footer-product {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer-product div a:link {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer-profile .profile-social img {
+    width: 20px;
+  }
 }
