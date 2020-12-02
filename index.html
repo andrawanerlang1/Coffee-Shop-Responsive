@@ -18,9 +18,12 @@
   <body>
     <div class="flex-container">
       <header>
-        <div class="header-logo"> 
+        <div class="header-logo d-none d-md-block"> 
           <img src="coffee1.png" alt=""></img>
-          Coffee Shop
+           Coffee Shop
+        </div>
+        <div class="header-logo d-sm-none"> 
+          <img src="coffee1.png" alt=""></img>
         </div>
         <div class="header-menu">
           <div class="home"><a href="url">Home</a></div>
@@ -28,10 +31,15 @@
           <div class="cart"><a href="url">Your Cart</a></div>
           <div class="history"><a href="url">History</a></div>
         </div>
-        <div class="header-account">
-          <div><a href="url"><img src="Vector.png" alt=""></img></a></div>
-          <div><a href="url"><img src="chat.png" alt=""></img></a></div>
-          <div><a href="url" ><img src="prof.png" alt="" style="border-radius: 50%;"></img></a></div>
+        <div class="d-none d-sm-block">
+          <div class="header-account">
+            <div><a href="url"><img src="Vector.png" alt=""></img></a></div>
+            <div><a href="url"><img src="chat.png" alt=""></img></a></div>
+            <div><a href="url" ><img src="prof.png" alt="" style="border-radius: 50%;"></img></a></div>
+          </div>
+        </div>
+        <div class="d-sm-none">
+          <div><a href="url"><img src="menu.png" alt=""></img></a></div>
         </div>
       </header>
       <main>

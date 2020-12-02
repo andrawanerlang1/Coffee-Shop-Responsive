@@ -13,7 +13,7 @@ header a:visited {
   display: flex;
   justify-content: space-between;
 }
-header .header-logo {
+header .header-logo.d-none.d-md-block {
   font-weight: bold;
   font-size: 20px;
   margin-left: 15px;
@@ -37,7 +37,7 @@ header .header-menu {
   border-bottom: 3px solid black;
 }
 header .header-account {
-  width: 15%;
+  width: 250px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -153,6 +153,7 @@ main {
 .top .one {
   margin-top: 50px;
   margin-left: 75px;
+  border-radius: 50%;
 }
 .top .two {
   font-family: Poppins;
@@ -458,6 +459,155 @@ main {
   }
   .line4 {
     margin-left: 0px;
+  }
+  @media (max-width: 780px) {
+    .mid .flex-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .mid div div {
+      width: 70px;
+      height: 80.41px;
+    }
+    .mid div div img {
+      width: 50px;
+      top: -30px;
+    }
+    .mid div div .name {
+      font-size: 12px;
+      top: -30px;
+    }
+    .mid div div .price {
+      font-size: 9px;
+      top: -40px;
+    }
+    .bot {
+      margin-top: 10px;
+      font-size: 10px;
+    }
+    .flex-container .discount {
+      bottom: 145px;
+      left: 45px;
+      width: 30px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  /* ======================================== for phone media ============================================== */
+  @media (max-width: 420px) {
+    .line1 {
+      text-align: left;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+    .line2 {
+      text-align: left;
+      font-size: 5px;
+      margin: 0 0 0 0;
+    }
+    .line3 .flex-container {
+      height: 200px;
+    }
+    .rec1 {
+      height: 302px;
+      width: 100px;
+      left: 5px;
+    }
+    .rec1 .top {
+      height: 190px;
+    }
+    .top .one img {
+      margin-top: 0px;
+      margin-left: 10px;
+      width: 60px;
+    }
+    .top .two {
+      font-size: 10px;
+    }
+    .top .three {
+      font-size: 6px;
+    }
+    .rec1 .bottom {
+      height: 50px;
+    }
+    .bottom .one {
+      font-size: 8px;
+    }
+    .bottom .two {
+      font-size: 10px;
+    }
+    .bottom .three {
+      font-size: 5px;
+      margin-left: 0px;
+    }
+    .rec2 {
+      height: 0px;
+    }
+    .rec3 {
+      height: 0px;
+    }
+    .line4 {
+      width: 50px;
+      height: 34px;
+      margin-left: 10px;
+      margin-top: 110px;
+      font-size: 10;
+      line-height: 10px;
+      font-size: 10px;
+    }
+    .line5 {
+      margin-top: 60px;
+      margin-left: 10px;
+      font-size: 10px;
+      line-height: 14px;
+    }
+    .top div {
+      font-size: 10px;
+    }
+    .mid .flex-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .mid div div {
+      width: 50px;
+      height: 70.41px;
+    }
+    .mid div div img {
+      width: 40px;
+      top: -15px;
+    }
+    .mid div div .name {
+      font-size: 8px;
+      top: -15px;
+    }
+    .mid div div .price {
+      font-size: 5px;
+      top: -30px;
+    }
+    .flex-container .discount {
+      bottom: 110px;
+      left: -20px;
+      width: 30px;
+      font-size: 7px;
+      line-height: 30px;
+    }
+    .footer-profile .profile-logo {
+      font-size: 10px;
+    }
+    .footer-profile .profile-desc {
+      font-size: 7px;
+      line-height: 10px;
+      width: 100px;
+    }
+    .footer-product {
+      font-size: 20px;
+      height: auto;
+      margin-left: 3px;
+    }
+    .footer-product div a:link {
+      font-size: 20px;
+    }
+    .footer-profile .profile-social img {
+      width: 20px;
+    }
   }
   /* ======================================== MEDIA UNTUK FOOTER ====================================== */
   .footer-profile .profile-desc {
