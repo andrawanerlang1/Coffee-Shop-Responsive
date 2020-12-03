@@ -1,0 +1,201 @@
+/* =========================batas style header dan footer================================================== */
+header a:link,
+header a:visited {
+  color: black;
+  text-decoration: none;
+}
+.flex-container {
+  box-sizing: border-box;
+}
+.flex-container header {
+  font-family: "Rubik", sans-serif;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  border-bottom: #f8f8f8 solid 5px;
+}
+header .header-logo.d-none.d-md-block {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15px;
+}
+header .header-menu {
+  color: black;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.header-menu div {
+  margin-left: 5px;
+}
+.home:hover,
+.product:hover,
+.cart:hover,
+.history:hover {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+header .header-account {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer {
+  display: flex;
+  align-items: flex-start;
+  padding: 60px;
+  font-family: "Rubik", sans-serif;
+  background-color: #f8f8f8;
+}
+footer .footer-profile {
+  font-family: "Rubik", sans-serif;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-profile .profile-logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer-profile .profile-desc {
+  width: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.footer-profile .profile-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+.profile-social a {
+  margin-right: 15px;
+}
+.footer-profile .profile-copy {
+  color: #afb5c0;
+}
+footer .footer-product {
+  flex: 1;
+  width: 20%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0b132a;
+  height: 300px;
+  margin-right: 10px;
+}
+.footer-product div a:link {
+  color: #4f5665;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 7px;
+  text-decoration: none;
+}
+@media (max-width: 650px) {
+  footer .footer-profile {
+    width: 200px;
+  }
+  footer .profile-desc {
+    font-size: 111px;
+    line-height: 10px;
+    width: 50px;
+    padding: 5px;
+  }
+}
+@media (max-width: 420px) {
+  .header-menu div {
+    font-size: 10px;
+  }
+  .footer-profile {
+    margin-left: -30px;
+    height: 200px;
+  }
+  .footer-profile .profile-logo {
+    font-size: 12px;
+  }
+  .footer-profile .profile-desc {
+    font-size: 11px;
+    line-height: 10px;
+    width: 100px;
+  }
+  footer .footer-product {
+    position: relative;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 10px;
+    left: 50px;
+  }
+  .profile-copy {
+    font-size: 10px;
+  }
+  .footer-product div a:link {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .footer-profile .profile-social img {
+    width: 20px;
+  }
+}
+/* =========================batas style header dan footer================================================== */
+.main {
+  height: 1000px;
+}
+.kiri.col-5 {
+  height: 1000px;
+}
+.top {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4f5665;
+  padding: 50px;
+}
+.mid img {
+  height: 700px;
+  margin-left: 80px;
+}
+.mid #chatborder {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: white;
+  right: 120px;
+  top: 150px;
+  border: orange solid 4px;
+}
+.mid #chatpic {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 130px;
+  top: 160px;
+}
+.bot {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+  margin-top: 30px;
+  margin-left: 80px;
+  width: 450px;
+}
+.kanan.col-7 {
+  height: 1000px;
+}
