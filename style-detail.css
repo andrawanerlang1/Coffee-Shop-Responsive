@@ -1,4 +1,3 @@
-/* =========================batas style header dan footer================================================== */
 header a:link,
 header a:visited {
   color: black;
@@ -13,9 +12,6 @@ header a:visited {
   padding: 30px;
   display: flex;
   justify-content: space-between;
-}
-header {
-  border-bottom: #f8f8f8 solid 5px;
 }
 header .header-logo.d-none.d-md-block {
   font-weight: bold;
@@ -149,53 +145,46 @@ footer .footer-product {
     width: 20px;
   }
 }
-/* =========================batas style header dan footer================================================== */
-.main {
-  height: 1000px;
+/* ==========================================batas style header dan footer================================================== */
+main .flex-container {
+  display: flex;
 }
-.kiri.col-5 {
-  height: 1000px;
+main .flex-container .kiri {
+  background-color: red;
+  flex: 3;
 }
-.top {
+.kiri .top {
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
-  color: #4f5665;
-  padding: 50px;
+  padding: 7%;
 }
-.mid img {
-  height: 700px;
-  margin-left: 80px;
+.kiri .mid img#cold {
+  width: 70%;
+  height: auto;
+  margin-left: 10%;
 }
-.mid #chatborder {
+.mid img#chat {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
+  left: 26%;
+  top: 30%;
   background-color: white;
-  right: 120px;
-  top: 150px;
-  border: orange solid 4px;
+  border-radius: 50%;
+  border: orange 4px solid;
+  padding: 2px;
 }
-.mid #chatpic {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 130px;
-  top: 160px;
-}
-.bot {
+.kiri .bot {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
+  padding: 7%;
   letter-spacing: 0.02em;
-  margin-top: 30px;
-  margin-left: 80px;
-  width: 450px;
+  width: 80%;
 }
-.kanan.col-7 {
-  height: 1000px;
+main .flex-container .kanan {
+  background-color: blue;
+  flex: 5;
 }

@@ -313,10 +313,11 @@ main {
 .mid div div .name {
   position: relative;
   top: -50px;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-style: normal;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 22px;
+  padding: 5px;
 }
 .mid div div .price {
   position: relative;
@@ -416,6 +417,7 @@ main {
   .mid div div .name {
     font-size: 17px;
     top: -20px;
+    padding: 0px;
   }
   .mid div div .price {
     font-size: 12px;
@@ -443,11 +445,12 @@ main {
     top: -30px;
   }
   .mid div div .name {
-    font-size: 12px;
+    font-size: 10px;
     top: -30px;
+    padding: 1px;
   }
   .mid div div .price {
-    font-size: 9px;
+    font-size: 8px;
     top: -40px;
   }
   .bot {
