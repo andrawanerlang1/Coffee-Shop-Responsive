@@ -194,7 +194,6 @@ main .flex-container .kanan {
   flex: 5;
 }
 .kanan .line1 {
-  background-color: white;
   display: flex;
   justify-content: start;
   font-family: Poppins;
@@ -262,12 +261,11 @@ main .flex-container .kanan {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 138.84%;
-  /* identical to box height, or 28px */
-
   letter-spacing: 0.03em;
-
   color: #9f9f9f;
+}
+.line4 form input {
+  height: 80%;
 }
 .line4 form button {
   width: 100%;
@@ -278,10 +276,136 @@ main .flex-container .kanan {
   font-style: normal;
   font-weight: bold;
   font-size: 23px;
-  line-height: 37px;
+  height: 80%;
+  text-align: center;
 }
 .line4 form .bot button {
   width: 100%;
   color: white;
   background-color: #6a4029;
+}
+.line4 form .bot button:hover {
+  background-color: blue;
+}
+
+/* =================================== media query ============================================================= */
+@media (max-width: 1150px) {
+  .mid img#chat {
+    border: orange 3px solid;
+    width: 30px;
+  }
+  .kiri .bot {
+    font-size: 18px;
+  }
+  .kanan .line1 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .line1 img {
+    border-radius: 50%;
+    width: 20px;
+    border-width: 2px;
+  }
+  .line1 .garis1 {
+    width: 50px;
+  }
+  .line1 .garis2 {
+    width: 50px;
+  }
+  .line2 .atas {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .line2 .bawah {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .line3 {
+    font-size: 20px;
+    line-height: 138.84%;
+  }
+  .line4 form {
+    font-size: 13px;
+  }
+  .line4 form input {
+    font-size: 13px;
+  }
+  .line4 form button {
+    font-size: 13px;
+    line-height: auto;
+  }
+}
+@media (max-width: 750px) {
+  .mid img#chat {
+    border: orange 3px solid;
+    width: 20px;
+  }
+  .kiri .bot {
+    font-size: 12px;
+  }
+  .kiri .top {
+    font-size: 13px;
+  }
+  .kanan .line1 div p {
+    position: relative;
+    font-size: 8px;
+    top: -10px;
+  }
+  .line1 img {
+    border-radius: 50%;
+    width: 15px;
+    border-width: 2px;
+  }
+  .line1 .garis1 {
+    width: 20px;
+  }
+  .line1 .garis2 {
+    width: 20px;
+  }
+  .line2 .atas {
+    font-size: 30px;
+    line-height: 15px;
+  }
+  .line2 .bawah {
+    font-size: 20px;
+    line-height: 10px;
+  }
+  .line3 {
+    font-size: 15px;
+    line-height: 138.84%;
+  }
+  .line4 {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 420px) {
+  main .flex-container {
+    flex-direction: column;
+  }
+  .kanan {
+    margin-left: 10%;
+  }
+  .kiri {
+    margin-left: 5%;
+  }
+  .kiri .mid img#cold {
+    width: 50%;
+  }
+  .kiri .bot {
+    border-bottom: gray 5px solid;
+  }
+  .mid img#chat {
+    right: 9%;
+    border: orange 2px solid;
+  }
+  .line4 form {
+    font-size: 8px;
+  }
+  .line4 form input {
+    font-size: 8px;
+  }
+  .line4 form button {
+    font-size: 8px;
+    line-height: auto;
+  }
 }
