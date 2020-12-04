@@ -279,10 +279,18 @@ main .flex-container .kanan {
   height: 80%;
   text-align: center;
 }
-.line4 form .bot button {
+.line4 form .bot a,
+.line4 form .bot a:visited {
   width: 100%;
   color: white;
   background-color: #6a4029;
+  border-color: black;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  height: 80%;
+  text-align: center;
 }
 .line4 form .bot button:hover {
   background-color: blue;

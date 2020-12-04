@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+header a:link,
+header a:visited {
+  color: black;
+  text-decoration: none;
+}
+.flex-container {
+  box-sizing: border-box;
+}
+.flex-container header {
+  font-family: "Rubik", sans-serif;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+header .header-logo.d-none.d-md-block {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15px;
+}
+header {
+  border-bottom: #f8f8f8 5px solid;
+}
+header .header-menu {
+  color: black;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.header-menu div {
+  margin-left: 5px;
+}
+.home:hover,
+.product:hover,
+.cart:hover,
+.history:hover {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+header .header-account {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer {
+  display: flex;
+  align-items: flex-start;
+  padding: 60px;
+  font-family: "Rubik", sans-serif;
+  background-color: #f8f8f8;
+}
+footer .footer-profile {
+  font-family: "Rubik", sans-serif;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-profile .profile-logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer-profile .profile-desc {
+  width: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.footer-profile .profile-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+.profile-social a {
+  margin-right: 15px;
+}
+.footer-profile .profile-copy {
+  color: #afb5c0;
+}
+footer .footer-product {
+  flex: 1;
+  width: 20%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0b132a;
+  height: 300px;
+  margin-right: 10px;
+}
+.footer-product div a:link {
+  color: #4f5665;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 7px;
+  text-decoration: none;
+}
+@media (max-width: 650px) {
+  footer .footer-profile {
+    width: 200px;
+  }
+  footer .profile-desc {
+    font-size: 111px;
+    line-height: 10px;
+    width: 50px;
+    padding: 5px;
+  }
+}
+@media (max-width: 420px) {
+  .header-menu div {
+    font-size: 10px;
+  }
+  .footer-profile {
+    margin-left: -30px;
+    height: 200px;
+  }
+  .footer-profile .profile-logo {
+    font-size: 12px;
+  }
+  .footer-profile .profile-desc {
+    font-size: 11px;
+    line-height: 10px;
+    width: 100px;
+  }
+  footer .footer-product {
+    position: relative;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 10px;
+    left: 50px;
+  }
+  .profile-copy {
+    font-size: 10px;
+  }
+  .footer-product div a:link {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .footer-profile .profile-social img {
+    width: 20px;
+  }
+}
+/* ==========================================batas style header dan footer================================================== */
+main .flex-container.main {
+  display: flex;
+  flex-direction: row;
+  background-image: url("bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1100px;
+}
+main .kiri {
+  flex: 1;
+}
+.kiri .top {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: white;
+  text-shadow: 3px 4px black;
+  padding: 5%;
+  margin-left: 7%;
+  width: 50%;
+}
+.kiri .bot {
+  width: 70%;
+  background-color: white;
+  border-radius: 5%;
+  margin-left: 12%;
+}
+.kiri .bot .line1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 52px;
+  text-align: center;
+  padding-top: 10%;
+  color: #362115;
+}
+.kiri .bot .line2 .wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  margin-left: 5%;
+  border-bottom: lightgray solid 4px;
+  width: 90%;
+}
+.kiri .bot .flex-container {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.kiri .bot .flex-container img {
+  height: auto;
+  width: 80%;
+  border-radius: 15%;
+}
+.kiri .bot .flex-container div {
+  font-family: Poppins;
+  font-size: 17px;
+}
+.kiri .bot .line3 .wrapper,
+.kiri .bot .line4 .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.kanan.line3,
+.kanan.line4 {
+  text-align: right;
+}
+.kiri .line3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 30px;
+  color: #362115;
+}
+.kiri .line4 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  color: #362115;
+}
+main .kanan.main {
+  flex: 1;
+  margin-top: 170px;
+  margin-right: 10%;
+}
+.kanan .address .top {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 15px;
+}
+.address .top .address {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 0.1ch;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.address .top .edit {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+.address .bot {
+  background-color: white;
+  width: 80%;
+  border-radius: 15px;
+  height: 200px;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+}
+.address .bot p {
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+.address .bot .mid {
+  border-top: gray solid 3px;
+  border-bottom: gray solid 3px;
+}
+.address .bot .mid p {
+  padding-top: 10px;
+  width: 90%;
+}
+.top.payment {
+  font-family: Poppins;
+  font-weight: 550;
+  font-size: 25px;
+  color: white;
+  text-shadow: black 2px 2px;
+  margin-top: 50px;
+}
+.bot.payment {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: white;
+  border-radius: 15px;
+  width: 80%;
+  padding: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+}
+.bot.payment div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bot.payment .form-check.cod img {
+  background-color: #ffba33;
+  padding: 10px;
+  border-radius: 10px;
+  height: 45px;
+  width: 45px;
+}
+.bot.payment .form-check.kartu img {
+  background-color: #f47b0a;
+  padding: 10px;
+  border-radius: 10px;
+  width: 45px;
+  height: 40px;
+}
+.bot.payment .form-check.bank img {
+  background-color: #895537;
+  padding: 10px;
+  border-radius: 10px;
+  width: 45px;
+  height: 40px;
+}
+.confirm {
+  margin-top: 50px;
+  width: 80%;
+}
+.confirm button {
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  background-color: #6a4029;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1150px) {
+  .kiri .top {
+    font-size: 30px;
+    width: 70%;
+  }
+  .kiri .bot .line1 {
+    font-size: 25px;
+  }
+  .kiri .bot .flex-container div {
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: 15px;
+    margin-right: 7px;
+  }
+  .kiri .line3 {
+    font-size: 15px;
+  }
+  .kiri .line4 {
+    font-size: 19px;
+  }
+  main .kanan.main {
+    flex: 1;
+    margin-top: 170px;
+    margin-right: 10%;
+    padding-left: 5%;
+  }
+  .address .top .address {
+    font-size: 18px;
+  }
+  .address .top .edit {
+    font-size: 10px;
+  }
+  .address .bot {
+    height: 250px;
+  }
+  .address .bot p {
+    font-size: 12px;
+  }
+  .top.payment {
+    font-size: 18px;
+  }
+  .bot.payment {
+    font-size: 13px;
+  }
+  .bot.payment .form-check.cod img {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+  }
+  .bot.payment .form-check.kartu img {
+    padding: 5px;
+    width: 32px;
+    height: 30px;
+  }
+  .bot.payment .form-check.bank img {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  .confirm button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  main .flex-container.main {
+    display: flex;
+    flex-direction: column;
+    background-image: url("bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+}
