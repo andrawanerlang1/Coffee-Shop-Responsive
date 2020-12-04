@@ -338,7 +338,8 @@ main .flex-container .kanan {
   .line4 form input {
     font-size: 13px;
   }
-  .line4 form button {
+  .line4 form button,
+  .line4 form .bot a {
     font-size: 13px;
     line-height: auto;
   }
@@ -412,7 +413,8 @@ main .flex-container .kanan {
   .line4 form input {
     font-size: 8px;
   }
-  .line4 form button {
+  .line4 form button,
+  .line4 form bot a {
     font-size: 8px;
     line-height: auto;
   }
