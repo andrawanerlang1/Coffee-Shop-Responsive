@@ -4,23 +4,22 @@ header a:visited {
   color: black;
   text-decoration: none;
 }
-.flex-container {
-  box-sizing: border-box;
-}
-.flex-container header {
+header {
   font-family: "Rubik", sans-serif;
   background-color: white;
+  border-bottom: #f8f8f8 solid 5px;
   padding: 30px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
 }
 header .header-logo.d-none.d-md-block {
   font-weight: bold;
   font-size: 20px;
   margin-left: 15px;
-}
-header {
-  border-bottom: #f8f8f8 5px solid;
 }
 header .header-menu {
   color: black;
@@ -105,6 +104,9 @@ footer .footer-product {
   text-decoration: none;
 }
 @media (max-width: 650px) {
+  .header-menu div {
+    font-size: 15px;
+  }
   footer .footer-profile {
     width: 200px;
   }
@@ -157,6 +159,7 @@ main .flex-container.main {
   background-size: cover;
   background-repeat: no-repeat;
   height: 1100px;
+  margin-top: 100px;
 }
 main .kiri {
   flex: 1;

@@ -7,9 +7,13 @@ header a:visited {
 header {
   font-family: "Rubik", sans-serif;
   background-color: white;
-  padding: 30px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 30px;
+  top: 0px;
+  z-index: 1;
 }
 header .header-logo.d-none.d-md-block {
   font-weight: bold;
@@ -102,6 +106,9 @@ footer .footer-product {
   text-decoration: none;
 }
 @media (max-width: 650px) {
+  .header-menu div {
+    font-size: 15px;
+  }
   footer .footer-profile {
     width: 200px;
   }
@@ -149,7 +156,7 @@ footer .footer-product {
 /* ==========================================batas style header dan footer================================================== */
 main .flex-container {
   display: flex;
-  margin-top: 20px;
+  margin-top: 150px;
 }
 main .flex-container .kiri {
   flex: 3;
