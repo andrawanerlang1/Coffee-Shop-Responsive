@@ -4,10 +4,7 @@ header a:visited {
   color: black;
   text-decoration: none;
 }
-.flex-container {
-  box-sizing: border-box;
-}
-.flex-container header {
+header {
   font-family: "Rubik", sans-serif;
   background-color: white;
   padding: 30px;
@@ -385,6 +382,15 @@ main .flex-container .kanan {
   }
   .line4 {
     margin-top: 10px;
+  }
+  .line4 form {
+    font-size: 8px;
+  }
+  .line4 form input::placeholder {
+    font-size: 7px;
+  }
+  .btn.btn-primary {
+    font-size: 8px;
   }
 }
 @media (max-width: 420px) {
