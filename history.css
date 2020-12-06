@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+header a:link,
+header a:visited {
+  color: black;
+  text-decoration: none;
+}
+header {
+  font-family: "Rubik", sans-serif;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
+header .header-logo.d-none.d-md-block {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15px;
+}
+header .header-menu {
+  color: black;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.header-menu div {
+  margin-left: 5px;
+}
+.home:hover,
+.product:hover,
+.cart:hover,
+.history:hover {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+header .header-account {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer {
+  display: flex;
+  align-items: flex-start;
+  padding: 60px;
+  font-family: "Rubik", sans-serif;
+  background-color: #f8f8f8;
+}
+footer .footer-profile {
+  font-family: "Rubik", sans-serif;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-profile .profile-logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer-profile .profile-desc {
+  width: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.footer-profile .profile-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+.profile-social a {
+  margin-right: 15px;
+}
+.footer-profile .profile-copy {
+  color: #afb5c0;
+}
+footer .footer-product {
+  flex: 1;
+  width: 20%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0b132a;
+  height: 300px;
+  margin-right: 10px;
+}
+.footer-product div a:link {
+  color: #4f5665;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 7px;
+  text-decoration: none;
+}
+@media (max-width: 650px) {
+  .header-menu div {
+    font-size: 15px;
+  }
+  footer .footer-profile {
+    width: 200px;
+  }
+  footer .profile-desc {
+    font-size: 111px;
+    line-height: 10px;
+    width: 50px;
+    padding: 5px;
+  }
+}
+@media (max-width: 420px) {
+  .header-menu div {
+    font-size: 10px;
+  }
+  .footer-profile {
+    margin-left: -30px;
+    height: 200px;
+  }
+  .footer-profile .profile-logo {
+    font-size: 12px;
+  }
+  .footer-profile .profile-desc {
+    font-size: 11px;
+    line-height: 10px;
+    width: 100px;
+  }
+  footer .footer-product {
+    position: relative;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 10px;
+    left: 50px;
+  }
+  .profile-copy {
+    font-size: 10px;
+  }
+  .footer-product div a:link {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .footer-profile .profile-social img {
+    width: 20px;
+  }
+}
+/* ==========================================batas style header dan footer================================================== */
+main {
+  background-image: url("bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+main .top-main {
+  text-align: center;
+  padding-top: 100px;
+}
+.top-main h1,
+.top-main h3 {
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.top-main h3 {
+  font-size: 20px;
+  padding-top: 20px;
+}
+main .bot-main {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 20px;
+  padding-bottom: 80px;
+}
+.bot-main button {
+  background: none;
+  border: none;
+  color: white;
+  text-align: right;
+  text-decoration: underline;
+  margin-left: 25px;
+}
+.bot-main .box-main {
+  margin-top: 25px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  justify-content: space-between;
+}
+.box-main-item {
+  background-color: white;
+  margin-top: 10px;
+  width: 400px;
+  border-radius: 15px;
+  height: 100px;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+}
+.box-main-left {
+  flex: 1;
+}
+.box-main-left img {
+  width: 85px;
+  height: 85px;
+  border-radius: 100%;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+.box-main-right {
+  flex: 3;
+  margin-left: 15px;
+}
+.box-main-right .name {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 37px;
+}
+.box-main-right .price,
+.box-main-right .status {
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 30px;
+  color: #895537;
+}
+.status {
+  display: flex;
+}
+.status input {
+  margin-left: 230px;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+@media (max-width: 480px) {
+  .bot-main .box-main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .box-main-item {
+    width: 300px;
+  }
+  .box-main-left img {
+    width: 65px;
+    height: 65px;
+    margin-left: 10px;
+    margin-top: 12px;
+  }
+  .box-main-right {
+    flex: 3;
+    margin-left: 15px;
+  }
+  .box-main-right .name {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .box-main-right .price,
+  .box-main-right .status {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .status input {
+    margin-left: 180px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
